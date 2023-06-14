@@ -1,9 +1,9 @@
 #include <iostream>
 
 int main (){
-    std::cout << "Hello World!";
-
-    return 0;
+    int file_size = 1024;
+    int counter = 0;
+    std::cout << file_size;
 }
 
 
