@@ -4,17 +4,29 @@ using namespace std;
 
 int main()
 {
-    double sales = 95000;
+
+    double sales;
+    double limit = 3000000;
+    cout << "Enter Sales" << endl;
+
+    cin >> sales;
+
     double stateTax = .04 * (sales);
     double countyTax = .02 * (sales);
 
-    double num = 4;
-    double div = (num / 100);
+    double totalTax = stateTax + countyTax;
 
     cout << "Sales = $" << sales << endl;
     cout << " countyTax =$" << countyTax << endl;
     cout << " stateTax =$" << stateTax << endl;
-    cout << "Total tax = $" << stateTax + countyTax << endl;
+    cout << "Total Tax = $" << totalTax << endl;
 
-    cout << div << endl;
+    if (totalTax > limit)
+    {
+        cout << "You are very Rich" << endl;
+    }
+    else
+    {
+        cout << "This country will rip you off" << endl;
+    }
 }
